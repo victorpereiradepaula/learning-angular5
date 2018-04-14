@@ -3,22 +3,22 @@
 ## Setting up development environment
 
 Firt open command line interface and check if Node.js and npm are istalled:
-`node -v && npm -v`
+```node -v && npm -v```
 
 So install Angular CLI:
-`npm i @angular/cli -g`
+```npm i @angular/cli -g```
 
 After the instalation, you can check if it has been correctly installed by running:
-`ng -v`
+```ng -v```
 
 ## Getting started
 
 Start a new project:
-`ng new <ProjectName> --style=css --routing`
+```ng new <ProjectName> --style=css --routing```
 `--style=css` specify a style flag, `--routing` integrate and set up it routing by default.
 
-To use Angular Animations go to the created folder `cd <ProjectName>` and :
-`npm i @angular/animations@latest --save`
+To use Angular Animations go to the created folder `cd <ProjectName>` and run:
+```npm i @angular/animations@latest --save```
 
 
 ## Development server
