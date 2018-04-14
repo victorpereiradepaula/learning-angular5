@@ -1,6 +1,25 @@
-# LearningAngular5
+# Learning Angular 5
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+## Setting up development environment
+
+Firt open command line interface and check if Node.js and npm are istalled:
+`node -v && npm -v`
+
+So install Angular CLI:
+`npm i @angular/cli -g`
+
+After the instalation, you can check if it has been correctly installed by running:
+`ng -v`
+
+## Getting started
+
+Start a new project:
+`ng new <ProjectName> --style=css --routing`
+`--style=css` specify a style flag, `--routing` integrate and set up it routing by default.
+
+To use Angular Animations go to the created folder `cd <ProjectName>` and :
+`npm i @angular/animations@latest --save`
+
 
 ## Development server
 
@@ -22,6 +41,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## References
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- <https://angular.io/>
+- <https://www.udemy.com/angular-5/>
+- <https://github.com/angular/angular-cli>
+
+<hr>
+
+A special thanks to <a href="https://github.com/Renan-B-Dias">@Renan-B-Dias</a> for reviewing the text.

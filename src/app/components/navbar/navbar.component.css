@@ -1,0 +1,120 @@
+.navbar__box_left_up,
+.navbar__box_right_up,
+.navbar__box_left_down,
+.navbar__box_right_down {
+  z-index: 4;
+  width: auto;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar__box_left_up,
+.navbar__box_left_down {
+  left: 15px;
+}
+
+.navbar__box_right_up,
+.navbar__box_right_down {
+  right: 15px;
+}
+
+.navbar__box_left_up,
+.navbar__box_right_up {
+  top: 15px;
+}
+
+.navbar__box_left_down,
+.navbar__box_right_down {
+  bottom: 15px;
+}
+
+.navbar-controls_btn_hidden {
+  font-size: 24px;
+}
+
+.navbar-controls__btn_left,
+.navbar-controls__btn_right,
+.navbar-controls_btn_hidden {
+  color: #cccccc;
+  border: none;
+}
+
+.navbar-controls__btn_left,
+.navbar-controls__btn_right {
+  width: 25px;
+  height: 20px;
+}
+
+.navbar-controls__btn_left {
+  float: left;
+}
+
+.navbar-controls__btn_right {
+  float: right;
+}
+
+.navbar-controls__box {
+  height: 20px;
+}
+
+.navbar__link-box_right {
+  text-align: right;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: calc(100% - 50px);
+}
+.navbar__link-box {
+  text-align: center;
+}
+.navbar__link-box,
+.navbar-controls__box {
+  display: block;
+  width: 100%;
+}
+
+.navbar__link,
+.navbar__link_horizontal {
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.navbar__link {
+  display: block;
+  padding: 15px 25px;
+}
+
+.navbar__box {
+  background-color: #262626;
+}
+
+.navbar__link_horizontal {
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+.navbar__link_horizontal:hover {
+  background-color: #303030;
+}
+
+.navbar__link_horizontal:active {
+  background: linear-gradient(#303030, #262626, #303030);
+}
+
+.navbar__link:hover,
+.navbar-controls_btn_hidden:hover,
+.navbar-controls__btn_left:hover,
+.navbar-controls__btn_right:hover {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar__link:active,
+.navbar-controls_btn_hidden:active,
+.navbar-controls__btn_left:active,
+.navbar-controls__btn_right:active {
+  color: #000000;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.5), rgba(255, 255, 255, 0.5));
+}

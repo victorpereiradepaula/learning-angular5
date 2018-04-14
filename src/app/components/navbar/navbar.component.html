@@ -1,0 +1,22 @@
+<nav [class]="navbarClass">
+  <div class="navbar-controls__box">
+    <button [class]='navbarButtonControlLeftClass' (click)="moveLeftUp()">&#9700;</button>
+    <button [class]='navbarButtonControlRightClass' (click)="moveRightUp()">&#9701;</button>
+    <button [class]='navbarButtonControlClass' (click)="moveUp()">&#10005;</button>
+    <button [class]='navbarButtonControlClass' (click)="maximize()">&#9633;</button>
+    <button [class]='navbarButtonControlClass' (click)="minimize()">&#9644;</button>
+  </div>
+
+  <div [class]="navbarLinkBox">
+    <button [class]="navbarHiddenButtonClass">&#9776;</button>
+    <a [class]="navbarLinkClass" href="">Personal</a>
+    <a [class]="navbarLinkClass" href="">Professional</a>
+    <a [class]="navbarLinkClass" href="">About</a>
+    <a [class]="navbarLinkClass" href="">Contact</a>
+  </div>
+
+  <div class="navbar-controls__box">
+    <button [class]='navbarButtonControlLeftClass' (click)="moveLeftDown()">&#9699;</button>
+    <button [class]='navbarButtonControlRightClass' (click)="moveRightDown()">&#9698;</button>
+  </div>
+</nav>

@@ -1,6 +1,6 @@
 {
   "name": "learning-angular5",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^5.2.0",
+    "@angular/animations": "^5.2.9",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
@@ -44,5 +44,20 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorpereiradepaula/learning-angular5.git"
+  },
+  "keywords": [
+    "[Angular",
+    "5",
+    "Web",
+    "Learning]"
+  ],
+  "author": "Victor Pereira de Paula",
+  "bugs": {
+    "url": "https://github.com/victorpereiradepaula/learning-angular5/issues"
+  },
+  "homepage": "https://github.com/victorpereiradepaula/learning-angular5#readme",
 }
