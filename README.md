@@ -40,7 +40,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 - <https://angular.io/>
 - <https://www.udemy.com/angular-5/>
 - <https://github.com/angular/angular-cli>
-- <https://github.com/angular/angular-cli/wiki/stories-github-pages>
 
 <hr>
 
