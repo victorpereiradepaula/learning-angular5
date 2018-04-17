@@ -21,6 +21,7 @@
 }
 
 .introduction__text-view {
+  padding-top: 175px;
   z-index: 3;
   text-align: center
 }

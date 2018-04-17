@@ -8,7 +8,7 @@
   </div>
 
   <div [class]="navbarLinkBox">
-    <button [class]="navbarHiddenButtonClass">&#9776;</button>
+    <button [class]="navbarHiddenButtonClass" (click)="showMenu()">&#9776;</button>
     <a [class]="navbarLinkClass" href="">Personal</a>
     <a [class]="navbarLinkClass" href="">Professional</a>
     <a [class]="navbarLinkClass" href="">About</a>
@@ -19,4 +19,10 @@
     <button [class]='navbarButtonControlLeftClass' (click)="moveLeftDown()">&#9699;</button>
     <button [class]='navbarButtonControlRightClass' (click)="moveRightDown()">&#9698;</button>
   </div>
+</nav>
+<nav [class]='navbarDropdown' [ngStyle]="{'display': isVisible}">
+  <a class="navbar__dropdown-item" href="">Personal</a>
+  <a class="navbar__dropdown-item" href="">Professional</a>
+  <a class="navbar__dropdown-item" href="">About</a>
+  <a class="navbar__dropdown-item" href="">Contact</a>
 </nav>
