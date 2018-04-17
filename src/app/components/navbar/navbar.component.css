@@ -1,20 +1,51 @@
+.navbar__box,
+.navbar__dropdown,
 .navbar__box_left_up,
 .navbar__box_right_up,
 .navbar__box_left_down,
-.navbar__box_right_down {
+.navbar__box_right_down,
+.navbar__dropdown_left_up,
+.navbar__dropdown_right_up,
+.navbar__dropdown_left_down,
+.navbar__dropdown_right_down {
   z-index: 4;
-  width: auto;
   position: fixed;
+}
+
+.navbar__dropdown_left_up,
+.navbar__dropdown_right_up {
+  top: 91px;
+}
+
+.navbar__dropdown_left_down,
+.navbar__dropdown_right_down {
+  bottom: 91px;
+}
+
+.navbar__dropdown-item {
+  margin: 5px 0;
+}
+
+.navbar__box_left_up,
+.navbar__box_right_up,
+.navbar__box_left_down,
+.navbar__dropdown-item,
+.navbar__box_right_down {
+  width: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar__box_left_up,
-.navbar__box_left_down {
+.navbar__box_left_down,
+.navbar__dropdown_left_up,
+.navbar__dropdown_left_down {
   left: 15px;
 }
 
 .navbar__box_right_up,
-.navbar__box_right_down {
+.navbar__box_right_down,
+.navbar__dropdown_right_up,
+.navbar__dropdown_right_down {
   right: 15px;
 }
 
@@ -63,9 +94,11 @@
   padding-right: 25px;
   width: calc(100% - 50px);
 }
+
 .navbar__link-box {
   text-align: center;
 }
+
 .navbar__link-box,
 .navbar-controls__box {
   display: block;
@@ -73,6 +106,7 @@
 }
 
 .navbar__link,
+.navbar__dropdown-item,
 .navbar__link_horizontal {
   font-size: 12px;
   text-decoration: none;
@@ -81,12 +115,14 @@
   text-align: center;
 }
 
-.navbar__link {
+.navbar__link,
+.navbar__dropdown-item {
   display: block;
   padding: 15px 25px;
 }
 
 .navbar__box {
+  width: 100%;
   background-color: #262626;
 }
 
@@ -104,17 +140,39 @@
 }
 
 .navbar__link:hover,
-.navbar-controls_btn_hidden:hover,
+.navbar__dropdown-item:hover,
 .navbar-controls__btn_left:hover,
+.navbar-controls_btn_hidden:hover,
 .navbar-controls__btn_right:hover {
   color: #000000;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar__link:active,
-.navbar-controls_btn_hidden:active,
+.navbar__dropdown-item:active,
 .navbar-controls__btn_left:active,
+.navbar-controls_btn_hidden:active,
 .navbar-controls__btn_right:active {
   color: #000000;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+@media screen and (max-width: 767px) {
+  .navbar__dropdown,
+  .navbar__dropdown_right_up,
+  .navbar__dropdown_left_down,
+  .navbar__dropdown_right_down {
+    right: 0;
+    top: 76px;
+    width: 100%;
+    border-top: 1px solid #202020;
+    background-color: #262626;
+  }
+  .navbar__dropdown-item {
+    margin-top: 0;
+    background-color: transparent;
+  }
+  .navbar__link-box_right {
+    height: 36px;
+  }
 }
