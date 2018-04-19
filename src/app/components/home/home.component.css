@@ -29,12 +29,12 @@
 .introduction__opacity-view {
   z-index: 2;
   opacity: 0.6;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .introduction__title,
 .introduction__subtitle {
-  color: #ffffff;
+  color: #fff;
 }
 
 .personal__box,
@@ -79,5 +79,5 @@
 }
 
 .professional__box {
-  background-color: #eeeeee;
+  background-color: #eee;
 }

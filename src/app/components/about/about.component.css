@@ -1,0 +1,25 @@
+.about__box {
+  float: left;
+  width: 100%;
+  padding: 100px;
+  max-width: 400px;
+  margin-top: 10%;
+  margin-left: 10%;
+  background-color: #DEE5BF;
+}
+
+.about__background {
+  background-image: url('/assets/img/background__about.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .about__box {
+    max-width: 80%;
+    padding: 100px 10%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}

@@ -7,7 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
+import { DefaultGuard } from './guards/default.guard';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AppRoutingModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
+  providers: [DefaultGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
