@@ -1,12 +1,19 @@
 .contact__box {
   z-index: 20;
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: calc(50% - 240px);
   padding: 40px;
   position: fixed;
   max-width: 400px;
   width: calc(100% - 80px);
   background-color: #eee;
+}
+
+@media screen and (max-width: 567px) {
+  .contact__box {
+    left: 0;
+    max-width: 100%;
+  }
 }
 
 .contact__label,
