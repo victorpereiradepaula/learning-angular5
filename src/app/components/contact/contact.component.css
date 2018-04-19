@@ -1,0 +1,22 @@
+.contact__box {
+  width: calc(100% - 80px);
+  padding: 40px;
+  max-width: 400px;
+  background-color: #eee;
+}
+
+.contact__label,
+.contact__input,
+.contact__textarea {
+  display: block;
+  width: 100%;
+}
+.contact__label {
+  margin-bottom: 2px;
+}
+.contact__input {
+  margin-bottom: 10px;
+}
+.contact__button {
+  margin-top: 30px;
+}

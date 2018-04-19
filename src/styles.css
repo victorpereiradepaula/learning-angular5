@@ -6,10 +6,16 @@ body {
   margin: 0;
 }
 
+.box {
+  min-height: calc(100vh - 139px);
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+
 button {
   outline: none;
   cursor: pointer;
-  border-radius: 0;
   text-transform: uppercase;
   background-color: transparent;
 }
@@ -22,31 +28,31 @@ button {
 }
 
 .button_white {
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .button_white:hover {
-  color: #000000;
-  background-color: #ffffff;
+  color: #000;
+  background-color: #fff;
 }
 
 .button_white:active {
-  background: linear-gradient(#ffffff, #eeeeee, #ffffff);
+  background: linear-gradient(#fff, #eeeeee, #fff);
 }
 
 .button_black {
-  color: #000000;
-  border: 2px solid #000000;
+  color: #000;
+  border: 2px solid #000;
 }
 
 .button_black:hover {
-  color: #ffffff;
-  background-color: #000000;
+  color: #fff;
+  background-color: #000;
 }
 
 .button_black:active {
-  background: linear-gradient(#000000, #222222, #000000);
+  background: linear-gradient(#000, #222, #000);
 }
 
 .block_center {
@@ -57,4 +63,20 @@ button {
 
 .hidden {
   display: none;
+}
+
+input {
+  height: 24px;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+}
+
+div,
+input,
+button,
+textarea {
+  border-radius: 2px;
 }
