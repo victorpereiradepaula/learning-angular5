@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { LIFECYCLE_HOOKS_VALUES } from '@angular/compiler/src/lifecycle_reflector';
+import { Globals } from '../../globals';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +10,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   innerWidth: any
-  isVisible = 'none'
+  isVisible = false
   navbarLinkClass = 'navbar__link'
   navbarLinkBox = 'navbar__link-box'
   navbarHiddenButtonClass = 'hidden'
@@ -18,7 +20,7 @@ export class NavbarComponent implements OnInit {
   navbarButtonControlLeftClass = 'navbar-controls__btn_left'
   navbarButtonControlRightClass = 'navbar-controls__btn_right'
 
-  constructor() { }
+  constructor(public globals: Globals) { }
 
   ngOnInit() {
     this.innerWidth = window.innerWidth
@@ -27,7 +29,7 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.isVisible = 'none'
+    this.isVisible = false
     this.innerWidth = window.innerWidth
     this.setPositionOnResize()
   }
@@ -42,11 +44,7 @@ export class NavbarComponent implements OnInit {
   }
 
   showMenu() {
-    if (this.isVisible == 'none') {
-      this.isVisible = 'block'
-    } else {
-      this.isVisible = 'none'
-    }
+    this.isVisible = !this.isVisible
   }
 
   minimize() {
@@ -58,7 +56,7 @@ export class NavbarComponent implements OnInit {
   }
 
   maximize() {
-    this.isVisible = 'none'
+    this.isVisible = false
     this.navbarLinkClass = 'navbar__link'
     this.navbarHiddenButtonClass = 'hidden'
     this.navbarButtonControlLeftClass = 'navbar-controls__btn_left'
@@ -66,7 +64,7 @@ export class NavbarComponent implements OnInit {
   }
 
   moveUp() {
-    this.isVisible = 'none'
+    this.isVisible = false
     this.navbarClass = 'navbar__box'
     this.navbarButtonControlClass = 'hidden'
     this.navbarLinkBox = 'navbar__link-box_right'

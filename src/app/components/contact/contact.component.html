@@ -1,17 +1,16 @@
-
-<div class="modal_box">
-  <div class="contact__box block_center">
-    <h3>Tell me how can I help you</h3>
-    <form novalidate>
-      <label class="contact__label" for="name">Name:</label>
-      <input class="contact__input" id="name" type="text">
-      <label class="contact__label" for="email">E-mail:</label>
-      <input class="contact__input" id="email" type="email">
-      <label class="contact__label" for="subject">Subject:</label>
-      <input class="contact__input" id="subject" type="text">
-      <label class="contact__label" for="message">Message:</label>
-      <textarea class="contact__textarea" name="" id="message" cols="30" rows="10"></textarea>
-      <button class="button_black block_center contact__button" type="submit">Send message</button>
-    </form>
-  </div>
+<div class="modal_background" (click)="globals.setModalContactVisibility()"></div>
+<div class="contact__box block_center">
+  <button class="contact__close-button" (click)="globals.setModalContactVisibility()">&#10005;</button>
+  <h3 class="contact__title">Tell me how can I help you</h3>
+  <form novalidate>
+    <label class="contact__label" for="name">Name:</label>
+    <input class="contact__input" id="name" type="text">
+    <label class="contact__label" for="email">E-mail:</label>
+    <input class="contact__input" id="email" type="email">
+    <label class="contact__label" for="subject">Subject:</label>
+    <input class="contact__input" id="subject" type="text">
+    <label class="contact__label" for="message">Message:</label>
+    <textarea class="contact__textarea" name="" id="message" cols="30" rows="10"></textarea>
+    <button class="button_black_p block_center contact__button" type="submit">Send message</button>
+  </form>
 </div>

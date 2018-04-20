@@ -1,8 +1,19 @@
 .contact__box {
-  width: calc(100% - 80px);
+  z-index: 20;
+  top: 50px;
+  left: calc(50% - 240px);
   padding: 40px;
+  position: fixed;
   max-width: 400px;
+  width: calc(100% - 80px);
   background-color: #eee;
+}
+
+@media screen and (max-width: 567px) {
+  .contact__box {
+    left: 0;
+    max-width: 100%;
+  }
 }
 
 .contact__label,
@@ -11,12 +22,35 @@
   display: block;
   width: 100%;
 }
+
 .contact__label {
   margin-bottom: 2px;
 }
+
 .contact__input {
   margin-bottom: 10px;
 }
+
 .contact__button {
   margin-top: 30px;
+}
+
+.contact__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.contact__close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+}
+
+.contact__close-button:hover {
+  background: radial-gradient(#eee, #fff, #eee);
+}
+
+.contact__close-button:active {
+  background: radial-gradient(#fff, #eee, #fff);
 }

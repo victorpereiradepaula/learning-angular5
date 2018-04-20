@@ -8,6 +8,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DefaultGuard } from './guards/default.guard';
+import { Globals } from './globals';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { DefaultGuard } from './guards/default.guard';
     AppRoutingModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [DefaultGuard],
+  providers: [DefaultGuard, Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

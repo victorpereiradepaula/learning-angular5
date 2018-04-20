@@ -13,7 +13,7 @@
     <a [class]="navbarLinkClass" href="">Personal</a>
     <a [class]="navbarLinkClass" href="">Professional</a>
     <a [class]="navbarLinkClass" routerLink="about">About</a>
-    <a [class]="navbarLinkClass" href="">Contact</a>
+    <a [class]="navbarLinkClass" (click)="globals.setModalContactVisibility()">Contact</a>
   </div>
 
   <div class="navbar-controls__box">
@@ -21,10 +21,12 @@
     <button [class]='navbarButtonControlRightClass' (click)="moveRightDown()">&#9698;</button>
   </div>
 </nav>
-<nav [class]='navbarDropdown' [ngStyle]="{'display': isVisible}">
+<nav [class]='navbarDropdown' *ngIf="isVisible">
   <a class="navbar__dropdown-item" routerLink="">Home</a>
   <a class="navbar__dropdown-item" href="">Personal</a>
   <a class="navbar__dropdown-item" href="">Professional</a>
   <a class="navbar__dropdown-item" routerLink="about">About</a>
-  <a class="navbar__dropdown-item" href=""></a>
+  <a class="navbar__dropdown-item" (click)="globals.setModalContactVisibility()">Contact</a>
 </nav>
+
+<app-contact *ngIf="globals.isVisibleModalContact"></app-contact>
