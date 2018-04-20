@@ -1,5 +1,7 @@
 # Learning Angular 5
 
+[![Build Status](https://travis-ci.org/victorpereiradepaula/learning-angular5.svg?branch=master)](https://travis-ci.org/victorpereiradepaula/learning-angular5)
+
 ## Setting up development environment
 
 Firt open command line interface and check if Node.js and npm are istalled by running `node -v && npm -v`.
