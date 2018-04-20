@@ -1,7 +1,6 @@
 # Learning Angular 5
 
 [![Build Status](https://travis-ci.org/victorpereiradepaula/learning-angular5.svg?branch=master)](https://travis-ci.org/victorpereiradepaula/learning-angular5)
-[![Coverage Status](https://coveralls.io/repos/github/victorpereiradepaula/learning-angular5/badge.svg?branch=master)](https://coveralls.io/github/victorpereiradepaula/learning-angular5?branch=master)
 
 ## Setting up development environment
 
