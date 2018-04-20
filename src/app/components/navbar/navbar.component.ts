@@ -20,7 +20,7 @@ export class NavbarComponent implements OnInit {
   navbarButtonControlLeftClass = 'navbar-controls__btn_left'
   navbarButtonControlRightClass = 'navbar-controls__btn_right'
 
-  constructor(private globals: Globals) { }
+  constructor(public globals: Globals) { }
 
   ngOnInit() {
     this.innerWidth = window.innerWidth
