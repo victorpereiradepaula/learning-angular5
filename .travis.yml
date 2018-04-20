@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "6"
+install:
+  - npm install
+script:
+  - ng build --prod --output-path docs --base-href && cd docs && cp index.html 404.html && cd ..
