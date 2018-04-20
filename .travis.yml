@@ -8,7 +8,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 714aab3b687b55398cf176552b19c30c7c266090
+  github-token: $GITHUB_TOKEN
   keep-history: true
   locar-dir: docs
   on:
