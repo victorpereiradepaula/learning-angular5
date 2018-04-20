@@ -8,7 +8,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  # github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  github-token: 714aab3b687b55398cf176552b19c30c7c266090
   keep-history: true
   locar-dir: docs
   on:
