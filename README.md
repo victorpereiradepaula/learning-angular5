@@ -45,4 +45,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 <hr>
 
-A special thanks to <a href="https://github.com/Renan-B-Dias">@Renan-B-Dias</a> for reviewing the text.
+A special thanks to <a href="https://github.com/Renan-B-Dias">@Renan-B-Dias</a> and Isabella Alcântara for the texts review.
