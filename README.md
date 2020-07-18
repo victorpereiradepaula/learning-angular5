@@ -1,8 +1,24 @@
 # Learning Angular 5
 
+This project objective was to test GitHub Pages deploy and improve my front-end skills with Angular's framework. You can see the result [here](https://victorpereiradepaula.github.io/learning-angular5/).
+
+[![GitHub license](https://img.shields.io/github/license/victorpereiradepaula/learning-angular5)](https://github.com/victorpereiradepaula/learning-angular5/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/victorpereiradepaula/learning-angular5.svg?branch=master)](https://travis-ci.org/victorpereiradepaula/learning-angular5)
 [![codebeat badge](https://codebeat.co/badges/00d03e0e-e901-484c-ba8d-4aad7c3f473d)](https://codebeat.co/projects/github-com-victorpereiradepaula-learning-angular5-master)
 [![CodeFactor](https://www.codefactor.io/repository/github/victorpereiradepaula/learning-angular5/badge)](https://www.codefactor.io/repository/github/victorpereiradepaula/learning-angular5)
+![Deprecated](https://img.shields.io/badge/-deprecated-critical)
+
+## Table of Contents
+
+1. [Setting up development environment](#setting-up-development-environment)
+1. [Getting started](#getting-started)
+1. [Development server](#development-server)
+1. [Code scaffolding](#code-scaffolding)
+1. [Build](#build)
+1. [Running unit tests](#running-unit-tests)
+1. [Running end-to-end tests](#running-end-to-end-tests)
+1. [References](#references)
+
 ## Setting up development environment
 
 Firt open command line interface and check if Node.js and npm are istalled by running `node -v && npm -v`.
